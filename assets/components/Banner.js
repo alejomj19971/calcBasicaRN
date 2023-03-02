@@ -1,5 +1,7 @@
  import { View,Text,Image } from 'react-native'
  import { StyleSheet } from 'react-native'
+
+
  
  function Banner({name}){
     return(

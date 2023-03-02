@@ -1,22 +1,22 @@
 import { View,TextInput,Button } from "react-native";
-import {styles} from './assets/components/estilos'
-function Formulario(props){
+import { styles } from "./Estilos"; 
+export default function Formulario({numero}){
     return(
         <>
         
-        <View style={styles.container}>
+        <View >
 
-            <View>
-                <TextInput placeholder="Inserte un número"/>
+            <View style={{marginBottom:10,padding:1}} >
+                <TextInput   value={numero} placeholder="Inserte un número"/>
             </View>
 
-            <View>
-                <TextInput placeholder="Inserte un número"/>
+            <View  style={{marginBottom:10,padding:1}}>
+                <TextInput value={numero} placeholder="Inserte un número"/>
             </View>
 
-            <View>
-                <Button style={styles.botones}>+</Button>
-                <Button style={styles.botones}>-</Button>
+            <View style={{flex:1,justifyContent:'space-between'}}>
+                <Button  style={styles.botones}>Sumar</Button>
+                <Button style={styles.botones}>Restar</Button>
             </View>
 
             

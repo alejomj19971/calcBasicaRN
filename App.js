@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Image } from 'react-native';
-import {styles} from './assets/components/estilos'
+import {styles} from './assets/components/Estilos'
 import { useState } from 'react';
 import { Banner } from './assets/components/Banner.js';
-
+import Formulario from './assets/components/Formulario';
 
 export default function App() {
   const [valor1,setValor1]=useState()
@@ -16,7 +16,7 @@ export default function App() {
       </View>
 
       <View style={[styles.container,{flex:4,backgroundColor:'yellowgreen'}]}>
-        <Text style={[{color:'white'}]}>Cuerpo</Text>
+        <Formulario/>
       </View>
 
 
