@@ -8,6 +8,12 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
 web-build/
 
 # macOS
